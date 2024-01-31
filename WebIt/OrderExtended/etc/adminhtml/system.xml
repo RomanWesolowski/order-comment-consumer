@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="webit" translate="label" sortOrder="200">
+            <label>WebIt</label>
+        </tab>
+        <section id="order_extended" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <resource>WebIt_OrderExtended::order_extended_settings</resource>
+            <label>OrderExtended</label>
+            <tab>webit</tab>
+            <group id="settings" translate="label comment" type="text" sortOrder="10" showInDefault="1"
+                   showInWebsite="1" showInStore="1">
+                <label>OrderExtended</label>
+                <field id="comment" translate="label comment" type="text" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Special comment in order</label>
+                    <comment>Added after placing an order</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

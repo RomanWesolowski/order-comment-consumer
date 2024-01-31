@@ -1,0 +1,5 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/publisher.xsd">
+    <publisher topic="webit.order.create">
+        <connection name="db" exchange="webit-order-exchange" />
+    </publisher>
+</config>
